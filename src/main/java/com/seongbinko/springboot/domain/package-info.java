@@ -1,0 +1,1 @@
+package com.seongbinko.springboot.domain;
