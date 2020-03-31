@@ -1,10 +1,10 @@
 {{>layout/header}}
-    <h1>AWS 무중단 배포 웹서비스(Springboot & Spring security &JPA) - 고성빈 </h1>
+    <h1>포트폴리오 피드백 게시판 -고성빈 </h1>
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
-                <a href="/posts/save" role="button" class="btn btn-primary">글 쓰기</a>
                 {{#userName}}
+                    <a href="/posts/save" role="button" class="btn btn-primary">글 쓰기</a>
                     Logged in as: <span id="user">{{userName}}</span>
                     <a href="/logout" class="btn btn-info activce" role="button">Logout</a>
                 {{/userName}}
@@ -29,7 +29,7 @@
             {{#posts}}
                 <tr>
                     <td>{{id}}</td>
-                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
+                    <td id="index-title"><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>
