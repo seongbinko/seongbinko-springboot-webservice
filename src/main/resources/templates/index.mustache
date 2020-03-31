@@ -1,8 +1,8 @@
 {{>layout/header}}
     <h1>포트폴리오 피드백 게시판 -고성빈</h1>
-    <div class="col-md-12">
+    <div class="col-sm-12">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 {{#userName}}
                     <a href="/posts/save" role="button" class="btn btn-primary">글 쓰기</a>
                     Logged in as: <span id="user">{{userName}}</span>
@@ -12,6 +12,9 @@
                     <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
                     <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
                 {{/userName}}
+            </div>
+            <div class="col-sm-6 pull-right">
+                <a href="https://github.com/seongbinko/seongbinko-springboot-webservice" class="btn btn-default">깃허브 링크</a>
             </div>
         </div>
         <br>
@@ -29,7 +32,7 @@
             {{#posts}}
                 <tr>
                     <td>{{id}}</td>
-                    <td><a href="/posts/update/{{id}}" >{{title}}</a></td>
+                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>

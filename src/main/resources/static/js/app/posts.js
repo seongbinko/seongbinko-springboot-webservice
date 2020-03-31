@@ -30,7 +30,7 @@ var main = {
             alert('글이 등록되었습니다.');
             window.location.href = '/';
         }).fail(function (error) {
-            alert(JSON.stringify(error));
+            alert("등록 권한이 없습니다 " +JSON.stringify(error));
         });
     },
     update : function () {
@@ -51,7 +51,7 @@ var main = {
             alert("글이 수정되었습니다.");
             window.location.href = '/';
         }).fail(function(error){
-            alert(JSON.stringify(error));
+            alert("수정 권한이 없습니다 " +JSON.stringify(error));
         });
     },
     delete : function() {
@@ -66,7 +66,7 @@ var main = {
             alert('글이 삭제되었습니다.');
             window.location.href = '/';
         }).fail(function (error){
-            alert(JSON.stringify(error))
+            alert("삭제 권한이 없습니다 " +JSON.stringify(error))
         })
     }
 };
