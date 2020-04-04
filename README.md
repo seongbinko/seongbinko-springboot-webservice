@@ -8,4 +8,4 @@
   - 기능
     - CRUD 기능 + springboot + JPA + AWS + Travis CI + Nginx 무중단배포 + SNS로그인
   - 구조
-    - ![캡처](https://user-images.githubusercontent.com/60464424/78417375-4c7c9500-766c-11ea-9e00-7b9e97462ec2.JPG)
+    ![캡처](https://user-images.githubusercontent.com/60464424/78417375-4c7c9500-766c-11ea-9e00-7b9e97462ec2.JPG)
